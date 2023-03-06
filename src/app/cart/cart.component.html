@@ -1,0 +1,37 @@
+<div class="header">
+  <h1>Cart Page</h1>
+  <div class="cart-botton">
+    <app-cart-icon [cartCount]="cartCount"></app-cart-icon>
+  </div>
+</div>
+<div>
+  <section class="plp-list">
+    <div class="product-height" *ngFor="let productGot of products">
+
+      <div class="product-img">
+        <img src="{{productGot.product.image}}" alt="">
+      </div>
+      <div class="product-detail">
+        <div class="img-section">
+          <h2>
+            {{productGot.product.title}}
+          </h2>
+        </div>
+
+        <div class="price">
+          <h3>
+            Rs.{{productGot.product.price}}
+          </h3>
+        </div>
+        <div class="add-cart">
+          <div>
+            <button type="button" (click)="CountMinu(productGot)">-</button>{{productGot.quantity}}<button
+              (click)="CountPlus(productGot)" type="button">+</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>

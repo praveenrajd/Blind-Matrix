@@ -1,0 +1,35 @@
+<div class="product" *ngIf="!isAddProduct">
+  <div class="header">
+    <h1>PLP Page</h1>
+    <div class="cart">
+      <button (click)="addProduct()" type="button">Add product</button>
+      <div class="cart-botton">
+        <app-cart-icon [addProductCart]="addProductCart" [cartCount]="cartCount"></app-cart-icon>
+      </div>
+    </div>
+  </div>
+  <section class="plp-list">
+    <div class="product-height" *ngFor="let productList of products">
+      <button class="edit-btn" type="button" (click)="editProduct(productList)">
+        Edit
+      </button>
+      <div class="product-img" (click)="pdpPage(productList)">
+        <img src={{productList.image}} alt="">
+      </div>
+      <div class="price">
+        Rs.{{productList.price}}
+      </div>
+      <div class="product-name">
+        {{productList.title}}
+      </div>
+      <div class="product-name">
+        <button class="add-cart" type="button" (click)="addToCart(productList)">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<app-add-product [selectedProd]="selectedProd" [isAddProduct]="isAddProduct" *ngIf="!!isAddProduct"
+  (goBackPlp)="closeEditpage($event)"></app-add-product>

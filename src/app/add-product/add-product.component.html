@@ -1,0 +1,52 @@
+<section class="add-product">
+  <div>
+    <div class="form-text">
+      Product Name
+    </div>
+    <div>
+      <input [(ngModel)]="model.pName" class="input-field" type="text" name="productName" placeholder="Enter here">
+
+    </div>
+  </div>
+  <div>
+    <div class="form-text">
+      Product Price
+    </div>
+    <div>
+      <input [(ngModel)]="model.pPrice" class="input-field" type="text" name="productPrice" placeholder="Enter here">
+
+    </div>
+  </div>
+  <div>
+    <div class="form-text">
+      Product Description
+    </div>
+    <div>
+      <input [(ngModel)]="model.pDescription" class="input-field" type="text" name="productDescription"
+        placeholder="Enter here">
+
+    </div>
+  </div>
+  <div>
+    <div class="form-text">
+      Product img URL
+    </div>
+    <div>
+      <input [(ngModel)]="model.pImage" class="input-field" type="text" name="productImage" placeholder="Enter here">
+
+    </div>
+  </div>
+  <div>
+    <div class="form-text">
+      Product Category
+    </div>
+    <div>
+      <input [(ngModel)]="model.pCategory" class="input-field" type="text" name="productCategory"
+        placeholder="Enter here">
+
+    </div>
+  </div>
+  <button type="button" (click)="addProduct()">
+    Save product
+  </button>
+</section>

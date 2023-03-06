@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.css." */
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+
+}
+
+.cart-botton {
+  margin-left: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

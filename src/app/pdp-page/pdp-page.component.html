@@ -1,0 +1,39 @@
+<div class="product">
+  <div class="header">
+    <h1>PDP Page</h1>
+    <div class="cart-botton">
+      <app-cart-icon [cartCount]="cartCount"></app-cart-icon>
+    </div>
+  </div>
+  <section class="plp-list">
+    <div class="product-height">
+
+      <div class="product-img">
+        <img src="{{selectedProduct.image}}" alt="">
+      </div>
+      <div class="product-detail">
+        <div class="img-section">
+          <h2>
+            {{selectedProduct.title}}
+          </h2>
+        </div>
+        <div class="product-name">
+          Rs.{{selectedProduct.description}}
+        </div>
+        <div class="price">
+          <h3>
+            Rs.{{multiplyValue}}
+          </h3>
+        </div>
+        <div class="add-cart">
+          <div>
+            <button type="button" (click)="CountMinu()">-</button>{{productCount}}<button (click)="CountPlus()"
+              type="button">+</button>
+          </div>
+          <button type="button" (click)="addToCart(selectedProduct,multiplyValue,productCount)">Add to cart</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>

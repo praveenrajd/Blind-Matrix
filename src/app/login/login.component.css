@@ -1,0 +1,14 @@
+button,
+div {
+  margin: 10px;
+}
+
+.login {
+  margin: 0px;
+  overflow-x: hidden;
+  display: flex;
+  padding: 132px 0 0 0;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+}

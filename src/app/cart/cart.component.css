@@ -1,0 +1,45 @@
+.product-height {
+  display: flex;
+  padding: 30px 0 0 150px;
+}
+
+.product-img {
+  width: 10%;
+}
+
+.header {
+  padding: 20px;
+}
+
+.price h3 {
+  margin: 12px 0;
+}
+
+.img-section h2 {
+  margin: 5px 0;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.product-detail {
+  display: flex;
+  padding: 0 0 0 100px;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.add-cart {
+  display: flex;
+}
+
+button {
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+.img-section {
+  width: 50%;
+}
